@@ -1,0 +1,147 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Main Form Container */
+#user-form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Form Title */
+#form-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Input Fields */
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #007bff;
+    outline: none;
+    background-color: #e8f4fd;
+}
+
+/* Submit Button */
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Message Element */
+#message {
+    color: #d9534f;
+    font-size: 14px;
+    margin-top: 15px;
+    display: none; /* Hidden by default */
+}
+
+/* Toggle Text */
+#toggle-text {
+    margin-top: 20px;
+}
+
+#toggle-text p {
+    font-size: 14px;
+}
+
+#toggle-text a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+#toggle-text a:hover {
+    text-decoration: underline;
+}
+
+/* Google Login Button */
+#google-login {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background-color: #db4437;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Google Login Button Hover */
+#google-login:hover {
+    background-color: #c1351d;
+}
+
+/* Google Login Icon */
+#google-login::before {
+    content: url('https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg'); /* Google "G" logo */
+    width: 20px;
+    height: 20px;
+}
+
+/* Responsive Styling */
+@media (max-width: 480px) {
+    #user-form {
+        padding: 20px;
+    }
+
+    #form-title {
+        font-size: 24px;
+    }
+
+    button[type="submit"],
+    #google-login {
+        font-size: 14px;
+    }
+
+    input[type="email"],
+    input[type="password"] {
+        font-size: 14px;
+    }
+}
