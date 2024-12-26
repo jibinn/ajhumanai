@@ -14,7 +14,7 @@
     <header>
         <div class="content-fit">
             <div class="logo">AJHumanAI</div>
-            <nav>
+            <nav id="navbar">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
@@ -23,6 +23,8 @@
                     <li><a href="login.html">Login</a></li>
                 </ul>
             </nav>
+            <!-- Add hamburger menu for mobile -->
+            <button id="menu-toggle" class="menu-icon">☰</button>
             <!-- Dark Mode Toggle -->
             <button id="theme-toggle" class="theme-icon">🌙</button>
         </div>
@@ -125,6 +127,12 @@
 <div id="container3D"></div>
 <script type="module" src="app.js"></script>
 <script src="theme-toggle.js"></script>
-
+   <!-- Add the mobile toggle script here -->
+   <script>
+    // Toggle mobile navigation
+    document.getElementById("menu-toggle").addEventListener("click", () => {
+        document.getElementById("navbar").classList.toggle("active");
+    });
+</script>
 
 </html>

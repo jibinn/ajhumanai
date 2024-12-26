@@ -101,6 +101,79 @@ header nav ul li a:hover {
 }
 
 
+/* Mobile-Friendly Navigation */
+header .menu-icon {
+    display: none; /* Hidden by default */
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--text-color);
+}
+
+header nav {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+header nav ul {
+    display: flex;
+    gap: 2em;
+}
+
+@media screen and (max-width: 767px) {
+    /* Show hamburger menu */
+    header .menu-icon {
+        display: block;
+    }
+
+    /* Hide nav links by default */
+    header nav {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: var(--background-color);
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        transform: translateX(100%);
+        z-index: 1000;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    header nav ul {
+        flex-direction: column;
+        width: 100%;
+        gap: 1em;
+        padding: 1em;
+    }
+
+    header nav ul li a {
+        font-size: 1.2rem;
+        padding: 0.5em 1em;
+        width: 100%;
+    }
+
+    header nav.active {
+        transform: translateX(0);
+    }
+}
+
+/* Responsive Images */
+.section .decorate {
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+}
+
+@media screen and (max-width: 767px) {
+    #banner img.decorate {
+        width: 40vw; /* Scale down images */
+        bottom: 10px;
+    }
+}
+
+
 #banner .title {
     color: #e448ff;
     font-size: 11em;
