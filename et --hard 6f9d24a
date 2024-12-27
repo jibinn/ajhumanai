@@ -1,0 +1,8 @@
+[33m7c9e503[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m HEAD@{0}: reset: moving to HEAD
+[33m7c9e503[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m HEAD@{1}: reset: moving to 7c9e50377163c1f620f6d14fff55021ecf2d16d4
+[33m7c9e503[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m HEAD@{2}: pull --tags origin main: Fast-forward
+[33m6f9d24a[m HEAD@{3}: commit: file updated
+[33m0b464b7[m HEAD@{4}: commit: file updated
+[33md08fd48[m HEAD@{5}: commit: file updated and firebase delpoyed
+[33md778c33[m HEAD@{6}: Branch: renamed refs/heads/master to refs/heads/main
+[33md778c33[m HEAD@{8}: commit (initial): first commit
