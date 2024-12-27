@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #002733;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    perspective: 1000px;
+    display: flex;
+    align-items: center;
+}
+
+.form-container {
+    width: 300px;
+    padding: 20px;
+    background: #001925;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    margin-right: 20px; /* Space between form and 3D model */
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+h1 {
+    color: #FF7A01;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #87A4B6;
+    color: #001925;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #FF7A01;
+    color: #001925;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #FF9A01;
+}
+
+.rotate {
+    transform: rotateY(180deg);
+}
+
+#canvas-container {
+    width: 400px; /* Adjust as needed */
+    height: 400px; /* Adjust as needed */
+}
